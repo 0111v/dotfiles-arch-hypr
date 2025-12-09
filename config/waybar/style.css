@@ -142,7 +142,12 @@ window#waybar {
 /* } */
 
 #custom-power {
-  font-size: 26px;
+  color: @red-muted;
+  font-size: 16px;
   margin: 0 6px;
   /* text-align: center; */
+}
+
+#custom-power:hover {
+  color: @red-bright;
 }
