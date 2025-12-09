@@ -1,0 +1,24 @@
+/* Light theme colors (Material variant) */
+@define-color fg-bright      #fbf1c7;
+@define-color orange-bright  #fe8019;
+@define-color aqua-bright    #689D6A;
+@define-color purple-bright  #B16286;
+@define-color blue-bright    #458588;
+@define-color yellow-bright  #fabd2f;
+@define-color green-bright   #98971A;
+@define-color red-bright     #CC241D;
+
+/* Dark theme colors (Material variant) */
+@define-color fg-muted       #ddc7a1;
+@define-color orange-muted   #e68a4e;
+@define-color aqua-muted     #89b482;
+@define-color purple-muted   #d3869b;
+@define-color blue-muted     #7daea3;
+@define-color yellow-muted   #d7a657;
+@define-color green-muted    #a8b665;
+@define-color red-muted      #e96962;
+
+/* Background colors */
+@define-color bg1            #3c3836;
+@define-color bg0            #282828;
+

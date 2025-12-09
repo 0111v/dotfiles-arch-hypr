@@ -30,7 +30,7 @@
         // "keyboard-state",
         // "sway/language",
         "battery",
-        "battery#bat2",
+        // "battery#bat2",
         // "clock",
         "tray",
         "custom/power"
@@ -153,8 +153,8 @@
         },
         "format": "{capacity}% {icon}",
         "format-full": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
-        "format-plugged": "{capacity}% ",
+        "format-charging": "{capacity}% ",
+        // "format-plugged": "{capacity}% ",
         "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
@@ -187,7 +187,7 @@
         "format-disconnected": "Disconnected ⚠",
         // "format-disconnected": "󰖪  Disconnected",
         // "format-alt": "{ifname}: {ipaddr}/{cidr}",
-        "on-click": "hyprctl dispatch exec '[float; center; size 60% 60%] kitty nmtui'"
+        "on-click": "hyprctl dispatch exec '[float; center; size 40% 60%] kitty nmtui'"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
