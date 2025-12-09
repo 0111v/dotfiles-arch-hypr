@@ -1,3 +1,3 @@
 #!/bin/bash
-neofetch
+fastfetch
 exec bash

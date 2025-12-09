@@ -1,7 +1,7 @@
 width=720
 height=420
 show=drun
-prompt=Apps
+prompt=Search...
 no_actions=true
 orientation=vertical
 allow_images=true

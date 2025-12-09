@@ -111,7 +111,6 @@ window {
 #text {
   margin: 5px;
   border: none;
-  /* color: @fg-muted; */
   animation: fadeIn 0.5s ease-in-out both;
 }
 
