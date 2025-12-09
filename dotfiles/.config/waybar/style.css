@@ -1,4 +1,4 @@
-@import "colors.css";
+@import "../themes/colors.css";
 
 * {
     font-family: "Inconsolata Nerd Font", fontawesome, roboto, helvetica, arial, sans-serif;
