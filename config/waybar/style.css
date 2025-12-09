@@ -2,14 +2,12 @@
 
 * {
     font-family: "Inconsolata Nerd Font", fontawesome, roboto, helvetica, arial, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     transition: background-color .3s ease-out;
-    /* color: @fg0; */
 }
 
 window#waybar {
     background: transparent;
-    /* color: @bg0; */
     border: none;
 }
 
@@ -17,7 +15,6 @@ window#waybar {
 .modules-center,
 .modules-right {
     background: transparent;
-    /* margin: 5px 5px; */
     padding: 2px 6px;
     border-radius: 8px;
     border: 1.5px solid @fg-bright;
@@ -26,10 +23,8 @@ window#waybar {
 #workspaces button {
     background: transparent;
     font-weight: 900;
-    /* font-size: 13pt; */
     color: @fg-muted;
     border: none;
-    /* border-radius: 15px; */
     padding: 0 10px;
 }
 
@@ -137,15 +132,10 @@ window#waybar {
   color: @aqua-bright;
 }
 
-/* #tray { */
-/*   color: @fg0; */
-/* } */
-
 #custom-power {
   color: @red-muted;
   font-size: 16px;
   margin: 0 6px;
-  /* text-align: center; */
 }
 
 #custom-power:hover {
