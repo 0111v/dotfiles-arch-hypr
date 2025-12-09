@@ -1,15 +1,15 @@
-@import "gruvbox-material.css";
+@import "colors.css";
 
 * {
-    font-family: "fira sans semibold", fontawesome, roboto, helvetica, arial, sans-serif;
-    font-size: 20px;
+    font-family: "Inconsolata Nerd Font", fontawesome, roboto, helvetica, arial, sans-serif;
+    font-size: 18px;
     transition: background-color .3s ease-out;
     /* color: @fg0; */
 }
 
 window#waybar {
     background: transparent;
-    color: @fg0;
+    /* color: @bg0; */
     border: none;
 }
 
@@ -20,40 +20,32 @@ window#waybar {
     /* margin: 5px 5px; */
     padding: 4px 6px;
     border-radius: 8px;
-    border: 2px solid @border;
+    border: 1.5px solid @fg-bright;
 }
 
 #workspaces button {
     background: transparent;
     font-weight: 900;
     /* font-size: 13pt; */
-    color: @fg0;
+    color: @fg-muted;
     border: none;
     /* border-radius: 15px; */
-    padding: 0 5px;
+    padding: 0 10px;
 }
 
 #workspaces button.active {
-    background: @blue;
-    color: @bg0;
+    background: @blue-bright;
+    color: @fg-bright;
 }
 
-/* #workspaces button.focused { */
-/*     background: rgba(196, 167, 231, 0.3); */
-/*     color: #e0def4; */
-/* } */
-
 #workspaces button.urgent {
-    background: @red;
-    /* color: #191724; */
+    background: @red-bright;
+    color: @fg-bright;
 }
 
 #workspaces button:hover {
-    /* background: rgba(196, 167, 231, 0.2); */
-    /* border: 1px solid rgba(196, 167, 231, 0.6); */
-    /* color: @red; */
-    background: @blue;
-    color: @bg0;
+    background: @blue-bright;
+    color: @fg-bright;
 }
 
 #workspaces button:hover {
@@ -63,49 +55,86 @@ window#waybar {
 
 #custom-arch {
   margin: 0 6px;
-  color: @blue;
+  color: @blue-bright;
   font-size: 26px;
 }
 
 #clock {
-    /* padding: 0 10px; */
-    /* border-radius: 15px; */
-    /* background: @grey2; */
-    /* color: #f6c177; */
+    padding: 0 10px;
+    color: @fg-muted;
     font-weight: 700;
 }
 
 #clock:hover {
-  color: @orange;
+  color: @fg-bright;
 }
 
 #pulseaudio,
 #network,
 #cpu,
 #memory,
-#temperature {
+#temperature, 
+#backlight,
+#battery,
+#tray {
   margin: 0 6px;
 }
 
 
 #pulseaudio {
-  color: @yellow;
+  color: @yellow-muted;
+}
+
+#pulseaudio:hover {
+  color: @yellow-bright;
 }
 
 #network {
-  color: @blue;
+  color: @blue-muted;
+}
+
+#network:hover {
+  color: @blue-bright;
 }
 
 #cpu {
-  color: @green;
+  color: @green-muted;
+}
+
+#cpu:hover {
+  color: @green-bright;
 }
 
 #memory {
-  color: @purple;
+  color: @purple-muted;
+}
+
+#memory:hover {
+  color: @purple-bright;
 }
 
 #temperature {
-  color: @orange;
+  color: @orange-muted;
+}
+
+#temperature:hover {
+  color: @orange-bright;
+}
+
+#backlight {
+  color: @fg-muted;
+}
+
+#backlight:hover {
+  color: @fg-bright;
+}
+
+#battery {
+  color: @aqua-muted;
+}
+
+#battery:hover {
+  color: @aqua-bright;
 }
 
 /* #tray { */
