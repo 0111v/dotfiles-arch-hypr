@@ -11,13 +11,28 @@ window#waybar {
     border: none;
 }
 
-.modules-left,
 .modules-center,
 .modules-right {
     background: transparent;
     padding: 2px 6px;
     border-radius: 8px;
     border: 1.5px solid @fg-bright;
+}
+
+#main-left,
+#tray {
+  padding: 2px 6px;
+  border-radius: 8px;
+  border: 1.5px solid @fg-bright;
+  background: transparent;
+}
+
+#tray {
+  padding: 2px 12px;
+}
+
+#tray.empty {
+  border: none
 }
 
 #workspaces button {
@@ -49,7 +64,7 @@ window#waybar {
 }
 
 #custom-arch {
-  margin: 0 6px;
+  margin: 0 18px 0 6px;
   color: @blue-bright;
   font-size: 26px;
 }
