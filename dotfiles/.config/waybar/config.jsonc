@@ -102,7 +102,7 @@
         "on-click": "hyprctl dispatch exec '[float; center; size 50% 55%] pavucontrol'"
     },
     "custom/power": {
-    "format" : "⏻",
+    "format" : "",
 		"tooltip": false,
 		"on-click": "systemctl suspend",
     "on-click-right": "systemctl reboot"
