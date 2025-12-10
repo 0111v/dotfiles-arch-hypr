@@ -1,6 +1,3 @@
-# Theme files (generated/imported)
-config/*/colors.css
-
 # Editor temporary files
 *.swp
 *.swo
@@ -8,10 +5,10 @@ config/*/colors.css
 .DS_Store
 
 # App-specific generated files
-config/nvim/lazy-lock.json
-config/nvim/.luarc.json
-config/**/cache/
-config/**/log/
+dotfiles/.config/nvim/lazyvim.json
+dotfiles/.config/nvim/.luarc.json
+dotfiles/.config/**/cache/
+dotfiles/.config/**/log/
 *.log
 
 # Secrets and private data

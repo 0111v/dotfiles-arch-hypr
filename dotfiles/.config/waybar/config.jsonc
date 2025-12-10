@@ -8,10 +8,13 @@
     // Choose the order of the modules
     "modules-left": [
         "custom/arch",
+        "tray",
         "hyprland/workspaces"
+        // "tray"
     ],
     "modules-center": [
         "clock"
+        // "tray"
     ],
     "modules-right": [
         "pulseaudio",
@@ -22,7 +25,6 @@
         "temperature",
         "backlight",
         "battery",
-        "tray",
         "custom/power"
     ],
     "custom/arch": {
@@ -43,7 +45,7 @@
     "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}",
-        "format": "{:%H:%M | %d %A}"
+        "format": "{:%d %a | %H:%M}"
     },
     "cpu": {
         "format": "{usage}% ",
