@@ -20,7 +20,7 @@
         "power-profiles-daemon",
         "cpu",
         "memory",
-        "temperature",
+        "custom/temperature",
         "backlight",
         "battery",
         "custom/power"
@@ -48,12 +48,17 @@
     "memory": {
         "format": "{}% "
     },
-    "temperature": {
-      "thermal-zone": 0,
-      "critical-threshold": 80,
-      "format-critical": "{temperatureC}°C ",
-      "format": "{temperatureC}°C ",
+    "custom/temperature": {
+        "exec": "~/.config/waybar/scripts/temp.sh",
+        "interval": 2,
+        "format": "{}°C ",
     },
+    // "temperature": {
+    //   "thermal-zone": 0,
+    //   "critical-threshold": 80,
+    //   "format-critical": "{temperatureC}°C ",
+    //   "format": "{temperatureC}°C ",
+    // },
     "backlight": {
         "format": "{percent}% {icon}",
         "format-icons": ["", "", "", "", "", "", "", "", ""]

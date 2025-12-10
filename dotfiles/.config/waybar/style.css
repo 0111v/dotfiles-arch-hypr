@@ -83,7 +83,7 @@ window#waybar {
 #network,
 #cpu,
 #memory,
-#temperature, 
+#custom-temperature, 
 #backlight,
 #battery,
 #tray,
@@ -124,11 +124,11 @@ window#waybar {
   color: @purple-bright;
 }
 
-#temperature {
+#custom-temperature {
   color: @orange-muted;
 }
 
-#temperature:hover {
+#custom-temperature:hover {
   color: @orange-bright;
 }
 
