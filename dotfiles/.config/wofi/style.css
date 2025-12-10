@@ -23,8 +23,8 @@
 @define-color bg0            #282828;
 
 * {
-  font-family: 'Inconsolata Nerd Font', monospace;
-  font-size: 18px;
+  font-family: 'Paper Mono', monospace;
+  font-size: 16px;
 }
 
 /* Window */
