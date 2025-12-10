@@ -7,10 +7,8 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-        "custom/arch",
-        "tray",
-        "hyprland/workspaces"
-        // "tray"
+        "group/main-left",
+        "group/tray-container"
     ],
     "modules-center": [
         "clock"
@@ -22,7 +20,7 @@
         "power-profiles-daemon",
         "cpu",
         "memory",
-        "temperature",
+        "custom/temperature",
         "backlight",
         "battery",
         "custom/power"
@@ -38,10 +36,6 @@
         "warp-on-scroll": false,
         "format": "{name}"
     },
-    "tray": {
-        "icon-size": 21,
-        "spacing": 10
-    },
     "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}",
@@ -54,12 +48,17 @@
     "memory": {
         "format": "{}% "
     },
-    "temperature": {
-      "hwmon-path": "/sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon2/temp1_input",
-      "critical-threshold": 80,
-      "format-critical": "{temperatureC}°C ",
-      "format": "{temperatureC}°C ",
+    "custom/temperature": {
+        "exec": "~/.config/waybar/scripts/temp.sh",
+        "interval": 2,
+        "format": "{}°C ",
     },
+    // "temperature": {
+    //   "thermal-zone": 0,
+    //   "critical-threshold": 80,
+    //   "format-critical": "{temperatureC}°C ",
+    //   "format": "{temperatureC}°C ",
+    // },
     "backlight": {
         "format": "{percent}% {icon}",
         "format-icons": ["", "", "", "", "", "", "", "", ""]
@@ -103,9 +102,26 @@
         "on-click": "hyprctl dispatch exec '[float; center; size 50% 55%] pavucontrol'"
     },
     "custom/power": {
-    "format" : "⏻",
+    "format" : "",
 		"tooltip": false,
 		"on-click": "systemctl suspend",
     "on-click-right": "systemctl reboot"
+    },
+    "group/main-left": {
+        "orientation": "horizontal",
+        "modules": [
+            "custom/arch",
+            "hyprland/workspaces"
+        ]
+    },
+    "group/tray-container": {
+        "orientation": "horizontal",
+        "modules": [
+            "tray"
+        ]
+    },
+    "tray": {
+        "icon-size": 21,
+        "spacing": 10,
     }
 }

@@ -11,13 +11,28 @@ window#waybar {
     border: none;
 }
 
-.modules-left,
 .modules-center,
 .modules-right {
     background: transparent;
     padding: 2px 6px;
     border-radius: 8px;
     border: 1.5px solid @fg-bright;
+}
+
+#main-left,
+#tray {
+  padding: 2px 6px;
+  border-radius: 8px;
+  border: 1.5px solid @fg-bright;
+  background: transparent;
+}
+
+#tray {
+  padding: 2px 12px;
+}
+
+#tray.empty {
+  border: none
 }
 
 #workspaces button {
@@ -49,7 +64,7 @@ window#waybar {
 }
 
 #custom-arch {
-  margin: 0 6px;
+  margin: 0 18px 0 6px;
   color: @blue-bright;
   font-size: 26px;
 }
@@ -68,7 +83,7 @@ window#waybar {
 #network,
 #cpu,
 #memory,
-#temperature, 
+#custom-temperature, 
 #backlight,
 #battery,
 #tray,
@@ -109,11 +124,11 @@ window#waybar {
   color: @purple-bright;
 }
 
-#temperature {
+#custom-temperature {
   color: @orange-muted;
 }
 
-#temperature:hover {
+#custom-temperature:hover {
   color: @orange-bright;
 }
 
@@ -136,7 +151,7 @@ window#waybar {
 
 #custom-power {
   color: @red-muted;
-  font-size: 16px;
+  margin: 0 12px;
 }
 
 #custom-power:hover {
