@@ -3,6 +3,10 @@ return {
   event = 'VeryLazy',
   opts = {
     -- add any options here
+    presets = {
+      command_palette = true,
+      long_message_to_split = true,
+    },
   },
   dependencies = {
     -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
