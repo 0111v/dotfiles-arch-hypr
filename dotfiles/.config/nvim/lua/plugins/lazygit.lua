@@ -12,7 +12,7 @@ return {
       function()
         Snacks.lazygit()
       end,
-      desc = 'Lazygit',
+      desc = 'Lazy[g]it',
     },
   },
 }
